@@ -1,0 +1,15 @@
+{
+  "name": "polyglot-persistence",
+  "version": "1.0.0",
+  "description": "Logistics polyglot persistence routing layer",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "neo4j-driver": "^5.15.0",
+    "pg": "^8.11.3"
+  }
+}
