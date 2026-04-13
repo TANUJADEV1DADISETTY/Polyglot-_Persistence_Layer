@@ -1,0 +1,14 @@
+{"timestamp": "2023-10-27T10:00:00Z", "type": "PACKAGE_STATUS_CHANGE", "payload": {"package_id": "pkg-test-789", "status": "PICKED_UP", "location": {"lat": 34.0522, "lon": -118.2437}}}
+{"timestamp": "2023-10-27T10:00:05Z", "type": "DRIVER_LOCATION_UPDATE", "payload": {"driver_id": "drv-test-123", "location": {"lat": 34.0530, "lon": -118.2445}, "zone_id": "zone-test-abc"}}
+{"timestamp": "2023-10-27T10:05:00Z", "type": "PACKAGE_STATUS_CHANGE", "payload": {"package_id": "pkg-test-456", "status": "IN_TRANSIT", "location": {"lat": 34.0550, "lon": -118.2450}}}
+{"timestamp": "2023-10-27T10:10:00Z", "type": "PACKAGE_STATUS_CHANGE", "payload": {"package_id": "pkg-test-456", "status": "OUT_FOR_DELIVERY", "location": {"lat": 34.0600, "lon": -118.2500}}}
+{"timestamp": "2023-10-27T10:15:00Z", "type": "PACKAGE_STATUS_CHANGE", "payload": {"package_id": "pkg-test-456", "status": "DELIVERED", "driver_id": "drv-test-123", "location": {"lat": 34.0650, "lon": -118.2550}}}
+{"timestamp": "2023-10-27T10:15:00Z", "type": "BILLING_EVENT", "payload": {"invoice_id": "inv-001", "package_id": "pkg-test-789", "customer_id": "cust-456", "amount": 15.99}}
+{"timestamp": "2023-10-27T10:16:00Z", "type": "PACKAGE_STATUS_CHANGE", "payload": {"package_id": "pkg-test-789", "status": "DELIVERED", "driver_id": "drv-test-123", "location": {"lat": 34.0700, "lon": -118.2600}}}
+{"timestamp": "2023-10-27T10:17:00Z", "type": "BILLING_EVENT", "payload": {"invoice_id": "inv-002", "package_id": "pkg-test-789", "customer_id": "cust-456", "amount": 15.99}}
+{"timestamp": "2023-10-27T10:18:00Z", "type": "BILLING_EVENT", "payload": {"invoice_id": "inv-002", "package_id": "pkg-test-789", "customer_id": "cust-456", "amount": 15.99}}
+{"timestamp": "2023-10-27T10:19:00Z", "type": "DRIVER_LOCATION_UPDATE", "payload": {"driver_id": "drv-test-123", "location": {"lat": 34.0700, "lon": -118.2600}, "zone_id": "zone-test-abc"}}
+{"timestamp": "2023-10-27T10:20:00Z", "type": "BILLING_EVENT", "payload": {"invoice_id": "inv-003", "package_id": "pkg-complete-history-101", "customer_id": "cust-999", "amount": 25.00}}
+{"timestamp": "2023-10-27T10:21:00Z", "type": "PACKAGE_STATUS_CHANGE", "payload": {"package_id": "pkg-complete-history-101", "status": "DELIVERED", "driver_id": "drv-test-123", "location": {"lat": 34.0800, "lon": -118.2700}}}
+{"invalid-json": true
+{"timestamp": "2023-10-27T10:22:00Z", "type": "BILLING_EVENT", "payload": {"invoice_id": "inv-004", "package_id": "pkg-out-of-order-123", "customer_id": "cust-888", "amount": 10.00}}
